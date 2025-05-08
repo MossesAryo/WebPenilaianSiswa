@@ -40,4 +40,10 @@ class MataPelajaranController extends Controller
         // Jika kategori tidak ditemukan
         return back()->with('error', 'Mata Pelajaran not found');
     }
+    public function destroy(string $id)
+    {
+       mata_pelajaran::find($id)->delete();
+
+       return back()->with('success','Category has been deleted');
+    }
 }

@@ -13,3 +13,5 @@ Route::post('/MataPelajaran/create', [MataPelajaranController::class, 'store'])
 ->name('post.mapel');
 Route::put('/MataPelajaran/edit/{id}', [MataPelajaranController::class, 'update'])
 ->name('edit.mapel');
+Route::delete('/MataPelajaran/delete/{id}', [MataPelajaranController::class, 'destroy'])
+->name('destroy.mapel');
