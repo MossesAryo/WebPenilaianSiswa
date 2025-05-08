@@ -12,7 +12,7 @@ class MataPelajaranController extends Controller
     public function index()
     {
         return view('back.admin.mataPelajaran.mataPelajaran', [
-            'pelajaran' => mata_pelajaran::get()
+            'pelajaran' => mata_pelajaran::latest()->get()
         ]);
     }
     public function store(Request $request )

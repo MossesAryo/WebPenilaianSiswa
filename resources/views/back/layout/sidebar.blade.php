@@ -11,7 +11,7 @@
           <a href="#" class="block px-4 py-3 rounded-lg hover:bg-blue-200 hover:text-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-300 transition">
             Siswa
           </a>
-          <a href="#" class="block px-4 py-3 rounded-lg hover:bg-blue-200 hover:text-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-300 transition">
+          <a href="{{ route('get.nilai') }}" class="block px-4 py-3 rounded-lg hover:bg-blue-200 hover:text-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-300 transition">
             Nilai
           </a>
           <a href="#" class="block px-4 py-3 rounded-lg hover:bg-blue-200 hover:text-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-300 transition">
