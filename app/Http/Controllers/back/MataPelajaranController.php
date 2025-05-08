@@ -25,4 +25,19 @@ class MataPelajaranController extends Controller
 
         return back()->with('success','Categories has been created');
     }
+    public function update(Request $request, string $id)
+    {
+        $data = $request->validate([
+            'kode' => 'required|min:3',
+            'mata_pelajaran' => 'required|min:3',
+        ]);
+        $mapel = mata_pelajaran::find($id); 
+        if ($mapel) {
+            $mapel->update($data);
+            return back()->with('success', 'Mata Pelajaran has been updated');
+        }
+    
+        // Jika kategori tidak ditemukan
+        return back()->with('error', 'Mata Pelajaran not found');
+    }
 }
